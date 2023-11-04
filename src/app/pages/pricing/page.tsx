@@ -1,6 +1,9 @@
+import About from "../about/page";
+
 export default function Pricing() {
   return (
     <>
+    <About />
       <h1 className="text-4xl text-center mt-5 font-semibold">Our Pricing</h1>
       <div className="grid grid-cols-1 md:grid-cols-3 mt-10 w-full lg:space-x-8 p-3 ">
         <div className="h-39 md:h-80 bg-gradient-to-r from-violet-500 to-fuchsia-500 text-white shadow-lg rounded-md p-2 hover:shadow-md">
