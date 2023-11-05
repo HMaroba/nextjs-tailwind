@@ -57,6 +57,7 @@ export default function Login() {
               </label>
               <input
                 type="password"
+                placeholder="Password"
                 className="shadow-sm bg-gray-50 border 
                                           border-gray-300 text-gray-900  
                                           text-sm rounded-md block w-full p-2.5"
