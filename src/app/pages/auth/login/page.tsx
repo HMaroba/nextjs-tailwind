@@ -36,7 +36,7 @@ export default function Login() {
                 className="block my-2 text-left  
                                           text-sm font-medium text-gray-900"
               >
-               Email Address
+                Email Address
               </label>
               <input
                 type="text"
@@ -49,57 +49,38 @@ export default function Login() {
             </div>
 
             <div>
-            <label
-              className="block my-2 text-left  
+              <label
+                className="block my-2 text-left  
                                           text-sm font-medium text-gray-900"
-            >
-              Password
-            </label>
-            <input
-              type="password"
-              className="shadow-sm bg-gray-50 border 
+              >
+                Password
+              </label>
+              <input
+                type="password"
+                className="shadow-sm bg-gray-50 border 
                                           border-gray-300 text-gray-900  
                                           text-sm rounded-md block w-full p-2.5"
-            
-              required
-            />
-          </div>
+                required
+              />
+            </div>
 
-            {/* <div>
-              <div className="flex items-center justify-between">
-                <label
-                  htmlFor="password"
-                  className="block text-sm font-medium leading-6 text-gray-900"
-                >
-                  Password
-                </label>
-                <div className="text-sm">
-                  <a
-                    href="#"
-                    className="font-semibold text-indigo-600 hover:text-indigo-500"
-                  >
-                    Forgot password?
-                  </a>
-                </div>
-              </div>
-              <div className="mt-2">
-                <input
-                  id="password"
-                  name="password"
-                  type="password"
-                  autoComplete="current-password"
-                  required
-                  className="block w-full rounded-md border-0 py-1.5 pl-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                />
-              </div>
-            </div> */}
+            <div className="text-sm float-right">
+              <a
+                href="#"
+                className="font-semibold text-indigo-600 hover:text-indigo-500"
+              >
+                Forgot password?
+              </a>
+            </div>
 
             <div>
               <button
                 type="submit"
-                className="flex w-full justify-center rounded-md bg-gray-800  px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                className="p-2  text-white mt-2 w-full
+                                   rounded-lg border-green-600  
+                                   bg-green-600 hover:scale-105"
               >
-                Sign in
+                Submit
               </button>
             </div>
           </form>
