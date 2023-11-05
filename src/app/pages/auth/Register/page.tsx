@@ -31,6 +31,7 @@ export default function Example() {
                         name="first-name"
                         id="first-name"
                         autoComplete="given-name"
+                        placeholder="John"
                         className="block w-full rounded-md border-0 py-1.5 pl-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                       />
                     </div>
@@ -49,6 +50,7 @@ export default function Example() {
                         name="last-name"
                         id="last-name"
                         autoComplete="family-name"
+                        placeholder="Doe"
                         className="block w-full rounded-md border-0 py-1.5 pl-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                       />
                     </div>
@@ -61,7 +63,7 @@ export default function Example() {
                       htmlFor="first-name"
                       className="block text-sm font-medium leading-6 text-gray-900"
                     >
-                      First name
+                      Phone Number
                     </label>
                     <div className="mt-2">
                       <input
@@ -69,6 +71,7 @@ export default function Example() {
                         name="first-name"
                         id="first-name"
                         autoComplete="given-name"
+                        placeholder="+266 78123456"
                         className="block w-full rounded-md border-0 py-1.5 pl-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                       />
                     </div>
@@ -79,7 +82,7 @@ export default function Example() {
                       htmlFor="last-name"
                       className="block text-sm font-medium leading-6 text-gray-900"
                     >
-                      Last name
+                      Email Address
                     </label>
                     <div className="mt-2">
                       <input
@@ -87,6 +90,7 @@ export default function Example() {
                         name="last-name"
                         id="last-name"
                         autoComplete="family-name"
+                        placeholder="John@gmail.com"
                         className="block w-full rounded-md border-0 py-1.5 pl-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                       />
                     </div>
@@ -97,11 +101,11 @@ export default function Example() {
                       htmlFor="last-name"
                       className="block text-sm font-medium leading-6 text-gray-900"
                     >
-                      Last name
+                      Password
                     </label>
                     <div className="mt-2">
                       <input
-                        type="text"
+                        type="password"
                         name="last-name"
                         id="last-name"
                         autoComplete="family-name"
