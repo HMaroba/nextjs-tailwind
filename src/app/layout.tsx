@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Open_Sans } from 'next/font/google'
 import './globals.css'
 import HomeBar from './pages/navigation/Top2'
+import Example from './pages/navigation/Top'
 
 const inter = Open_Sans({ subsets: ['latin'] })
 
@@ -21,7 +22,7 @@ export default function RootLayout({
       <body className={inter.className}>
     
         <div className='mb-20'>
-        <HomeBar />
+        <Example />
         </div>
         {children}
         </body>
