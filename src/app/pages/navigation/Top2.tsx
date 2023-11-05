@@ -68,6 +68,9 @@ export default function HomeBar() {
                 <li className={`text-white ${currentPath === "/pages/about" ? "text-blue-500 font-semibold" : "text-white"}`}>
                   <Link href="/pages/about">About</Link>
                 </li>
+                <li className={`text-white ${currentPath === "/pages/contact" ? "text-blue-500 font-semibold" : "text-white"}`}>
+                  <Link href="/pages/contact">Pricing</Link>
+                </li>
                 <li className={`text-white ${currentPath === "/pages/pricing" ? "text-blue-500 font-semibold" : "text-white"}`}>
                   <Link href="/pages/pricing">Pricing</Link>
                 </li>
