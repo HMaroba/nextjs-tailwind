@@ -4,10 +4,11 @@ import { useState } from "react";
 
 export default function Example() {
   return (
-    <div className="isolate bg-white px-6 py-24 sm:py-32 lg:px-8">
+    <>
+    <div className="isolate bg-white sm:py-32 lg:px-8 h-full">
       <div className="mx-auto max-w-2xl text-center">
         <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-          Contact sales
+          Contact us
         </h2>
         <p className="mt-2 text-lg leading-8 text-gray-600">
           Aute magna irure deserunt veniam aliqua magna enim voluptate.
@@ -16,7 +17,7 @@ export default function Example() {
       <form
         action="#"
         method="POST"
-        className="mx-auto mt-16 max-w-xl sm:mt-20"
+        className="mx-auto max-w-xl sm:mt-20"
       >
         <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
           <div>
@@ -146,5 +147,6 @@ export default function Example() {
         </div>
       </form>
     </div>
+    </>
   );
 }
