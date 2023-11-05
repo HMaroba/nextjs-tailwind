@@ -20,7 +20,9 @@ export default function RootLayout({
       
       <body className={inter.className}>
     
+        <div className='mb-20'>
         <HomeBar />
+        </div>
         {children}
         </body>
     </html>
