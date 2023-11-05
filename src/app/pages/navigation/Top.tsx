@@ -6,10 +6,10 @@ import { FaBars } from "react-icons/fa";
 import { AiOutlineClose } from "react-icons/ai";
 
 const navigation = [
-  { name: "Product", href: "#" },
-  { name: "Features", href: "#" },
-  { name: "Marketplace", href: "#" },
-  { name: "Company", href: "#" },
+  { name: "About", href: "/about" },
+  { name: "Contact", href: "/contact" },
+  { name: "Pricing", href: "/pricing" },
+  { name: "Users", href: "users" },
 ];
 
 export default function Example() {
@@ -49,9 +49,15 @@ export default function Example() {
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
             <a
               href="#"
+              className="text-sm font-semibold leading-6 text-gray-900 mr-5"
+            >
+              Login
+            </a>
+            <a
+              href="#"
               className="text-sm font-semibold leading-6 text-gray-900"
             >
-              Log in <span aria-hidden="true">&rarr;</span>
+              Register
             </a>
           </div>
         </nav>
