@@ -6,9 +6,9 @@ import { FaBars } from "react-icons/fa";
 import { AiOutlineClose } from "react-icons/ai";
 
 const navigation = [
-  { name: "About", href: "/about" },
-  { name: "Contact", href: "/contact" },
-  { name: "Pricing", href: "/pricing" },
+  { name: "About", href: "/pages/about" },
+  { name: "Contact", href: "/pages/contact" },
+  { name: "Pricing", href: "/pages/pricing" },
   { name: "Users", href: "users" },
 ];
 
@@ -19,7 +19,7 @@ export default function Example() {
     <div className="bg-white">
       <header className="absolute inset-x-0 top-0 z-50">
         <nav
-          className="flex items-center justify-between p-6 lg:px-8"
+          className="flex items-center justify-between p-5 lg:px-8 bg-blue-500"
           aria-label="Global"
         >
           <div className="flex lg:flex-1">
