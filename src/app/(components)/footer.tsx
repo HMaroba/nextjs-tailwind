@@ -77,7 +77,11 @@ export default function Footer() {
             </div> */}
           </div>
         </div>
+        <div className="text-center mb-5">
+        <h6>Developed by Hlalele Maroba</h6>
       </div>
+      </div>
+   
     </>
   );
 }
