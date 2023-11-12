@@ -61,7 +61,7 @@ export default function HomeBar() {
                 navbar ? "block" : "hidden"
               }`}
             >
-              <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
+              <ul className="items-center justify-center space-y-8 md:flex md:items-center md:space-x-6 md:space-y-0">
                 <li
                   className={`text-white ${
                     currentPath === "/"
