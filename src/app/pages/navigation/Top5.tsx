@@ -1,14 +1,19 @@
-"use client";
-
+'use client'
 import React, { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-export default function HomeBar() {
+const HomeBar = () => {
   const [navbar, setNavbar] = useState(false);
   const currentPath = usePathname();
 
-  const navigation = ["Product", "Features", "Pricing", "Company", "Blog"];
+  const navigation = [
+    { label: "Product", href: "/", active: currentPath === "/" },
+    { label: "Features", href: "/features", active: currentPath === "/features" },
+    { label: "Pricing", href: "/pricing", active: currentPath === "/pricing" },
+    { label: "Company", href: "/company", active: currentPath === "/company" },
+    { label: "Blog", href: "/blog", active: currentPath === "/blog" },
+  ];
 
   return (
     <div className="w-full">
@@ -31,7 +36,7 @@ export default function HomeBar() {
                       viewBox="0 0 20 20"
                       fill="currentColor"
                     >
-                      <path
+                         <path
                         fillRule="evenodd"
                         d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
                         clipRule="evenodd"
@@ -46,7 +51,7 @@ export default function HomeBar() {
                       stroke="currentColor"
                       strokeWidth={2}
                     >
-                      <path
+                             <path
                         strokeLinecap="round"
                         strokeLinejoin="round"
                         d="M4 6h16M4 12h16M4 18h16"
@@ -63,10 +68,14 @@ export default function HomeBar() {
                 {navigation.map((menu, index) => (
                   <li className="mr-2 nav__item" key={index}>
                     <Link
-                      href="/"
-                      className="inline-block px-4 py-2 text-md font-normal text-gray-800 no-underline rounded-md dark:text-gray-200 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-gray-800"
+                      href={menu.href}
+                      className={`inline-block px-4 py-2 text-md font-normal rounded-md ${
+                        menu.active
+                          ? "text-indigo-500 bg-indigo-100"
+                          : "text-gray-800 dark:text-gray-200 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-gray-800"
+                      }`}
                     >
-                      {menu}
+                      {menu.label}
                     </Link>
                   </li>
                 ))}
@@ -89,10 +98,14 @@ export default function HomeBar() {
                 {navigation.map((item, index) => (
                   <Link
                     key={index}
-                    href="/"
-                    className="w-full px-4 py-2 -ml-4 text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 dark:focus:bg-gray-800 focus:outline-none"
+                    href={item.href}
+                    className={`w-full px-4 py-2 -ml-4 rounded-md ${
+                      item.active
+                        ? "text-indigo-500 bg-indigo-100"
+                        : "text-gray-500 dark:text-gray-300 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 dark:focus:bg-gray-800 focus:outline-none"
+                    }`}
                   >
-                    {item}
+                    {item.label}
                   </Link>
                 ))}
                 <Link
@@ -108,4 +121,6 @@ export default function HomeBar() {
       </nav>
     </div>
   );
-}
+};
+
+export default HomeBar;
