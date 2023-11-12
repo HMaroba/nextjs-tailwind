@@ -8,11 +8,10 @@ const HomeBar = () => {
   const currentPath = usePathname();
 
   const navigation = [
-    { label: "Product", href: "/", active: currentPath === "/" },
-    { label: "Features", href: "/features", active: currentPath === "/features" },
-    { label: "Pricing", href: "/pricing", active: currentPath === "/pricing" },
-    { label: "Company", href: "/company", active: currentPath === "/company" },
-    { label: "Blog", href: "/blog", active: currentPath === "/blog" },
+    { label: "Home", href: "/", active: currentPath === "/" },
+    { label: "About", href: "/pages/about", active: currentPath === "/pages/about" },
+    { label: "Contact", href: "/pages/form", active: currentPath === "/pages/form" },
+    { label: "Pricing", href: "/pages/pricing", active: currentPath === "/pages/pricing" },
   ];
 
   return (
