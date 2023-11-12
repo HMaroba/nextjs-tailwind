@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { Open_Sans } from 'next/font/google'
 import './globals.css'
-import HomeBar from './pages/navigation/Top2'
+import HomeBar from './pages/navigation/Top3'
 
 const inter = Open_Sans({ subsets: ['latin'] })
 
