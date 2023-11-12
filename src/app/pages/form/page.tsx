@@ -1,6 +1,6 @@
 export default function Contact() {
   return (
-    <div className="py-2 px-4 mx-auto max-w-screen-md">
+    <div className="py-2 px-4 mx-auto max-w-screen-md min-h-full">
       <h2
         className="mb-4 text-4xl font-extrabold  
                            text-center text-gray-900"

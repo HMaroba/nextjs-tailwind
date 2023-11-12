@@ -5,7 +5,7 @@ import { useState } from "react";
 export default function Example() {
   return (
     <>
-    <div className="isolate bg-white sm:py-32 lg:px-8 h-full">
+    <div className="isolate bg-white sm:py-32 lg:px-8 min-h-full">
       <div className="mx-auto max-w-2xl text-center">
         <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
           Contact us

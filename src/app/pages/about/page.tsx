@@ -1,7 +1,7 @@
 export default function About() {
   return (
     <>
-      <div className="mt-5">
+      <div className="mt-5 min-h-full">
         <h1 className="text-4xl text-center mt-5 font-semibold">About us</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 mt-10 w-full p-8 ">
           <div className="h-39 md:h-80 hidden lg:block ">
