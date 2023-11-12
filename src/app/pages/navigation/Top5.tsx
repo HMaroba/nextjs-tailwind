@@ -100,7 +100,7 @@ const HomeBar = () => {
                     href={item.href}
                     className={`w-full px-4 py-2 -ml-4 rounded-md ${
                       item.active
-                        ? "text-indigo-500 bg-indigo-100"
+                        ? "text-indigo-500"
                         : "text-gray-500 dark:text-gray-300 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 dark:focus:bg-gray-800 focus:outline-none"
                     }`}
                   >
