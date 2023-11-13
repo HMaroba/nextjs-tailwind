@@ -59,8 +59,8 @@ export default function Sidebar2({ children }: any) {
     {
       icon: <FiBook />,
       text: "Documentation",
-      href: "/dashboard/upgrade",
-      active: currentPath === "/dashboard/upgrade",
+      href: "/dashboard/documentation",
+      active: currentPath === "/dashboard/documentation",
     },
     {
       icon: <FiLayers />,
