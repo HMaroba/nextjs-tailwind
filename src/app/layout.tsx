@@ -3,6 +3,7 @@ import { Open_Sans } from "next/font/google";
 import "./globals.css";
 import HomeBar from "./pages/navigation/Top5";
 import Sidebar from "./(components)/Sidebar";
+import Header from "./(components)/Top6";
 import Footer from "./(components)/footer";
 
 const inter = Open_Sans({ subsets: ["latin"] });
@@ -25,10 +26,9 @@ export default function RootLayout({
         </div>
         {children}
         <Footer />
-
-        {/* <div className="flex">
+        {/* <div className='flex'>
           <Sidebar />
-          <div className="flex-1 p-2">{children}</div>
+          <div className="flex-1 p-4">{children}</div>
         </div> */}
       </body>
     </html>
