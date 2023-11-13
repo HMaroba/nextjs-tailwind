@@ -15,7 +15,7 @@ import {
 } from "react-icons/fi";
 
 export default function Sidebar2({ children }: any) {
-  const [sidebarOpen, setSidebarOpen] = useState(false);
+  const [sidebarOpen, setSidebarOpen] = useState(true);
 
   const toggleSidebar = () => {
     setSidebarOpen(!sidebarOpen);
@@ -41,7 +41,7 @@ export default function Sidebar2({ children }: any) {
         data-drawer-toggle="separator-sidebar"
         aria-controls="separator-sidebar"
         type="button"
-        className="inline-flex items-center p-2 mt-2 ms-3 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+        className="fixed top-0 left-0 inline-flex items-center p-2 mt-2 ms-3 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
         onClick={toggleSidebar}
       >
         <span className="sr-only">Toggle sidebar</span>
@@ -76,6 +76,7 @@ export default function Sidebar2({ children }: any) {
           </svg>
         )}
       </button>
+
       <aside
         id="separator-sidebar"
         className={`fixed top-0 left-0 z-40 w-64 h-screen transition-transform ${
@@ -84,6 +85,9 @@ export default function Sidebar2({ children }: any) {
         aria-label="Sidebar"
       >
         <div className="h-full px-3 py-4 overflow-y-auto bg-gray-50 dark:bg-gray-800">
+          <button className="text-white lg:hidden" onClick={toggleSidebar}>
+            Close
+          </button>
           <ul className="space-y-2 font-medium">
             {menuItems.map((menuItem, index) => (
               <li key={index}>
@@ -105,7 +109,7 @@ export default function Sidebar2({ children }: any) {
         </div>
       </aside>
 
-      <div className="p-4 sm:ml-64">{children}</div>
+      <div className="p-2 sm:ml-64">{children}</div>
     </>
   );
 }
