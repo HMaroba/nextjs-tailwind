@@ -1,9 +1,7 @@
 import type { Metadata } from "next";
 import { Open_Sans } from "next/font/google";
 import "./globals.css";
-import HomeBar from "./pages/navigation/Top5";
-import Footer from "./(components)/footer";
-
+import Sidebar2 from "@/app/(components)/Sidebar2";
 
 const inter = Open_Sans({ subsets: ["latin"] });
 
@@ -20,12 +18,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="mb-20">
-          <HomeBar />
-          {children}
+        <div>
+          <Sidebar2>{children}</Sidebar2>
         </div>
-        <Footer />
-     
       </body>
     </html>
   );
