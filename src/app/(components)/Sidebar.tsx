@@ -2,8 +2,11 @@
 
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
+interface SidebarProps {
+  children: React.ReactNode;
+}
 
-const Sidebar = () => {
+const Sidebar: React.FC<SidebarProps> = ({ children }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleSidebar = () => {
@@ -16,6 +19,7 @@ const Sidebar = () => {
         data-drawer-target="default-sidebar"
         data-drawer-toggle="default-sidebar"
         aria-controls="default-sidebar"
+        onClick={toggleSidebar}
         type="button"
         className="inline-flex items-center p-2 mt-2 ms-3 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
       >
@@ -179,6 +183,8 @@ const Sidebar = () => {
           </ul>
         </div>
       </aside>
+
+      <div className="p-4 sm:ml-64">{children}</div>
     </>
   );
 };
