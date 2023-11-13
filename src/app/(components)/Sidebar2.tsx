@@ -65,15 +65,15 @@ export default function Sidebar2({ children }: any) {
     {
       icon: <FiLayers />,
       text: "Components",
-      href: "/dashboard/upgrade",
-      active: currentPath === "/dashboard/upgrade",
+      href: "/dashboard/components",
+      active: currentPath === "/dashboard/components",
     },
-    {
-      icon: <FiLifeBuoy />,
-      text: "Help",
-      href: "/dashboard/upgrade",
-      active: currentPath === "/dashboard/upgrade",
-    },
+    // {
+    //   icon: <FiLifeBuoy />,
+    //   text: "Help",
+    //   href: "/dashboard/upgrade",
+    //   active: currentPath === "/dashboard/upgrade",
+    // },
     {
       icon: <FiLogOut />,
       text: "Logout",
