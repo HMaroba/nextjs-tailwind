@@ -53,14 +53,14 @@ export default function Sidebar2({ children }: any) {
     {
       icon: <FiLogIn />,
       text: "Sign In",
-      href: "/pages/about",
-      active: currentPath === "/pages/about",
+      href: "/pages/auth/login",
+      active: currentPath === "/pages/auth/login",
     },
     {
       icon: <FiLogOut />,
       text: "Sign Up",
-      href: "/pages/about",
-      active: currentPath === "/pages/about",
+      href: "/pages/auth/Register",
+      active: currentPath === "/pages/auth/Register",
     },
     {
       icon: <FiArrowUp />,
@@ -150,7 +150,7 @@ export default function Sidebar2({ children }: any) {
                   className={`flex items-center p-2
                    ${
                      menuItem.active
-                       ? "text-indigo-500 bg-indigo-100"
+                       ? "text-white bg-indigo-600"
                        : "text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
                    }
                    `}
