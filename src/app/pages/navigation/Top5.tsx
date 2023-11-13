@@ -12,6 +12,8 @@ const HomeBar = () => {
     { label: "About", href: "/pages/about", active: currentPath === "/pages/about" },
     { label: "Contact", href: "/pages/form", active: currentPath === "/pages/form" },
     { label: "Pricing", href: "/pages/pricing", active: currentPath === "/pages/pricing" },
+    { label: "Sign in", href: "/pages/auth/login", active: currentPath === "/pages/auth/login" },
+    { label: "Sign up", href: "/pages/auth/Register", active: currentPath === "/pages/auth/Register" },
   ];
 
   return (
