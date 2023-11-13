@@ -51,18 +51,6 @@ export default function Sidebar2({ children }: any) {
       active: currentPath === "/pages/pricing",
     },
     {
-      icon: <FiLogIn />,
-      text: "Sign In",
-      href: "/pages/auth/login",
-      active: currentPath === "/pages/auth/login",
-    },
-    {
-      icon: <FiLogOut />,
-      text: "Sign Up",
-      href: "/pages/auth/Register",
-      active: currentPath === "/pages/auth/Register",
-    },
-    {
       icon: <FiArrowUp />,
       text: "Upgrade to Pro",
       href: "/pages/about",
@@ -85,6 +73,12 @@ export default function Sidebar2({ children }: any) {
       text: "Help",
       href: "/pages/about",
       active: currentPath === "/pages/about",
+    },
+    {
+      icon: <FiLogOut />,
+      text: "Logout",
+      href: "/",
+    
     },
   ];
 
