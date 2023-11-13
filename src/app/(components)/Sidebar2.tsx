@@ -28,8 +28,8 @@ export default function Sidebar2({ children }: any) {
     {
       icon: <FiHome />,
       text: "Dashboard",
-      href: "/",
-      active: currentPath === "/",
+      href: "/pages/dashboard",
+      active: currentPath === "/pages/dashboard",
     },
     {
       icon: <FiInbox />,
@@ -47,8 +47,8 @@ export default function Sidebar2({ children }: any) {
     {
       icon: <FiBox />,
       text: "Products",
-      href: "/pages/pricing",
-      active: currentPath === "/pages/pricing",
+      href: "/pages/dashboard/products",
+      active: currentPath === "/pages/dashboard/products",
     },
     {
       icon: <FiArrowUp />,
