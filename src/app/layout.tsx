@@ -21,16 +21,16 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className='mb-20'>
-        <Sidebar>
-        {children}
-        </Sidebar>
+        <div className="mb-20">
+          <HomeBar />
+          {children}
         </div>
-       
         <Footer />
-        {/* <div className='flex'>
-          <Sidebar />
-          <div className="flex-1 p-4">{children}</div>
+        {/* <div>
+          <Sidebar>
+            {children}
+            <Footer />
+          </Sidebar>
         </div> */}
       </body>
     </html>

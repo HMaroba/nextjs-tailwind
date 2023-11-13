@@ -10,6 +10,7 @@ const Sidebar: React.FC<SidebarProps> = ({ children }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleSidebar = () => {
+    console.log('Toggling sidebar');
     setIsOpen(!isOpen);
   };
 
