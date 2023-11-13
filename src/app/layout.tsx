@@ -5,6 +5,7 @@ import HomeBar from "./pages/navigation/Top5";
 import Sidebar from "./(components)/Sidebar";
 import Header from "./(components)/Top6";
 import Footer from "./(components)/footer";
+import Sidebar2 from "./(components)/Sidebar2";
 
 const inter = Open_Sans({ subsets: ["latin"] });
 
@@ -21,17 +22,17 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="mb-20">
+        {/* <div className="mb-20">
           <HomeBar />
           {children}
         </div>
-        <Footer />
-        {/* <div>
-          <Sidebar>
+        <Footer /> */}
+        <div>
+          <Sidebar2>
             {children}
             <Footer />
-          </Sidebar>
-        </div> */}
+          </Sidebar2>
+        </div>
       </body>
     </html>
   );
