@@ -1,6 +1,13 @@
 "use client";
+import { useRouter } from "next/navigation";
 
 export default function Login() {
+
+const router = useRouter();
+
+  const handleLogin = () => {
+   router.push('/pages/dashboard');
+  }
   return (
     <>
       <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8 bg-white ">
@@ -77,6 +84,7 @@ export default function Login() {
             <div>
               <button
                 type="submit"
+                onClick={handleLogin}
                 className="p-2  text-white mt-2 w-full
                                    rounded-lg border-green-600  
                                    bg-green-600 hover:scale-105"
