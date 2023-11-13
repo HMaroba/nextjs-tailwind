@@ -35,14 +35,14 @@ export default function Sidebar2({ children }: any) {
       icon: <FiInbox />,
       text: "Inbox",
       badge: 3,
-      href: "/pages/about",
-      active: currentPath === "/pages/about",
+      href: "/pages/dashboard/inbox",
+      active: currentPath === "/pages/dashboard/inbox",
     },
     {
       icon: <FiUsers />,
       text: "Users",
-      href: "/pages/users",
-      active: currentPath === "/pages/users",
+      href: "/pages/dashboard/users",
+      active: currentPath === "/pages/dashboard/users",
     },
     {
       icon: <FiBox />,
