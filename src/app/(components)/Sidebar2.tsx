@@ -138,20 +138,20 @@ export default function Sidebar2({ children }: any) {
         }`}
         aria-label="Sidebar"
       >
-        <div className="h-full px-3 py-4 overflow-y-auto bg-gray-50 dark:bg-gray-800">
+        <div className="h-full px-3 py-2 overflow-y-auto bg-gray-50 dark:bg-gray-800">
           <button className="text-white lg:hidden" onClick={toggleSidebar}>
             Close
           </button>
-          <ul className="space-y-2 font-medium">
+          <ul className="space-y-2 font-small">
             {menuItems.map((menuItem, index) => (
-              <li key={index}>
+              <li key={index} className="mt-5">
                 <Link
                   href={menuItem.href}
                   className={`flex items-center p-2
                    ${
                      menuItem.active
-                       ? "text-white bg-indigo-600"
-                       : "text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
+                       ? "text-white bg-indigo-600 text-md"
+                       : "text-gray-900 rounded-lg text-md dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
                    }
                    `}
                 >
