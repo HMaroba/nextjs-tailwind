@@ -13,25 +13,79 @@ import {
   FiLayers,
   FiLifeBuoy,
 } from "react-icons/fi";
+import { usePathname } from "next/navigation";
+import Link from "next/link";
 
 export default function Sidebar2({ children }: any) {
   const [sidebarOpen, setSidebarOpen] = useState(true);
+  const currentPath = usePathname();
 
   const toggleSidebar = () => {
     setSidebarOpen(!sidebarOpen);
   };
 
   const menuItems = [
-    { icon: <FiHome />, text: "Dashboard" },
-    { icon: <FiInbox />, text: "Inbox", badge: 3 },
-    { icon: <FiUsers />, text: "Users" },
-    { icon: <FiBox />, text: "Products" },
-    { icon: <FiLogIn />, text: "Sign In" },
-    { icon: <FiLogOut />, text: "Sign Up" },
-    { icon: <FiArrowUp />, text: "Upgrade to Pro" },
-    { icon: <FiBook />, text: "Documentation" },
-    { icon: <FiLayers />, text: "Components" },
-    { icon: <FiLifeBuoy />, text: "Help" },
+    {
+      icon: <FiHome />,
+      text: "Dashboard",
+      href: "/",
+      active: currentPath === "/",
+    },
+    {
+      icon: <FiInbox />,
+      text: "Inbox",
+      badge: 3,
+      href: "/pages/about",
+      active: currentPath === "/pages/about",
+    },
+    {
+      icon: <FiUsers />,
+      text: "Users",
+      href: "/pages/users",
+      active: currentPath === "/pages/users",
+    },
+    {
+      icon: <FiBox />,
+      text: "Products",
+      href: "/pages/pricing",
+      active: currentPath === "/pages/pricing",
+    },
+    {
+      icon: <FiLogIn />,
+      text: "Sign In",
+      href: "/pages/about",
+      active: currentPath === "/pages/about",
+    },
+    {
+      icon: <FiLogOut />,
+      text: "Sign Up",
+      href: "/pages/about",
+      active: currentPath === "/pages/about",
+    },
+    {
+      icon: <FiArrowUp />,
+      text: "Upgrade to Pro",
+      href: "/pages/about",
+      active: currentPath === "/pages/about",
+    },
+    {
+      icon: <FiBook />,
+      text: "Documentation",
+      href: "/pages/about",
+      active: currentPath === "/pages/about",
+    },
+    {
+      icon: <FiLayers />,
+      text: "Components",
+      href: "/pages/about",
+      active: currentPath === "/pages/about",
+    },
+    {
+      icon: <FiLifeBuoy />,
+      text: "Help",
+      href: "/pages/about",
+      active: currentPath === "/pages/about",
+    },
   ];
 
   return (
@@ -91,9 +145,15 @@ export default function Sidebar2({ children }: any) {
           <ul className="space-y-2 font-medium">
             {menuItems.map((menuItem, index) => (
               <li key={index}>
-                <a
-                  href="#"
-                  className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
+                <Link
+                  href={menuItem.href}
+                  className={`flex items-center p-2
+                   ${
+                     menuItem.active
+                       ? "text-indigo-500 bg-indigo-100"
+                       : "text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
+                   }
+                   `}
                 >
                   {menuItem.icon}
                   <span className="ms-3">{menuItem.text}</span>
@@ -102,7 +162,7 @@ export default function Sidebar2({ children }: any) {
                       {menuItem.badge}
                     </span>
                   )}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
