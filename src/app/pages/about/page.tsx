@@ -1,3 +1,5 @@
+import Table from "../table/page";
+
 export default function About() {
   return (
     <>
@@ -25,6 +27,10 @@ export default function About() {
           </div>
         </div>
       </div>
+
+    <div className="p-10">
+    <Table />
+    </div>
     </>
   );
 }
