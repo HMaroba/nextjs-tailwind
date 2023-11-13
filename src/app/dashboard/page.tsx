@@ -1,7 +1,5 @@
 "use client";
 
-import Table from "../table/page";
-
 export default function Dashboard() {
   return (
     <>
