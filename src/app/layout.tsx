@@ -28,10 +28,7 @@ export default function RootLayout({
         </div>
         <Footer /> */}
         <div>
-          <Sidebar2>
-            {children}
-            <Footer />
-          </Sidebar2>
+          <Sidebar2>{children}</Sidebar2>
         </div>
       </body>
     </html>
