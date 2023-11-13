@@ -6,7 +6,7 @@ export default function Login() {
 const router = useRouter();
 
   const handleLogin = () => {
-   router.push('/pages/dashboard');
+   router.push('/dashboard');
   }
   return (
     <>
