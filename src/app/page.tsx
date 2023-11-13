@@ -1,10 +1,10 @@
-import Login from "./pages/auth/login/page";
+import Home from "./pages/Home/page";
 
 
-export default function Home() {
+export default function HomePage() {
   return (
     <main>
-      <Login />
+      <Home />
     </main>
   )
 }
