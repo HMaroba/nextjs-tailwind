@@ -4,9 +4,9 @@ export default function Signin() {
   return (
     <>
       <div className="flex min-h-screen items-center justify-center bg-white">
-        <div className="bg-white shadow-2xl rounded-lg flex h-min w-8/12">
+        <div className="bg-white shadow-2xl rounded-lg flex-none md:flex h-min w-8/12">
           <div className="bg-white w-full min-h-full p-4">
-            <p className="text-2xl mb-10">Welcome back</p>
+            <p className="text-2xl mb-10">Sign in</p>
             
 {/* <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your Email</label>
 <div className="relative">
@@ -19,16 +19,10 @@ export default function Signin() {
   <input type="text" id="email-address-icon" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="name@flowbite.com" />
 </div> */}
      <div className="w-full">
-              <label              className="block my-2 text-left  
-                                          text-sm font-medium text-gray-900"
-              >
+         <label className="block my-2 text-left text-sm font-medium text-gray-900">
                 Email Address
-              </label>
-              <input
-                type="text"
-                className="shadow-sm bg-gray-50 border 
-                                          border-gray-300 text-gray-900  
-                                          text-sm rounded-md block w-full p-2.5"
+         </label>
+              <input type="text" className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-md block w-full p-2.5"
                 placeholder="Enter email address"
                 required
               />
@@ -46,12 +40,7 @@ export default function Signin() {
               />
             </div>
 
-            <button
-                type="submit"
-              
-                className="p-2  text-white mt-4 w-full
-                                   rounded-lg border-green-600  
-                                   bg-blue-500"
+            <button type="submit" className="p-2  text-white mt-4 w-full rounded-lg border-green-600 bg-blue-500"
               >
                 Submit
               </button>
